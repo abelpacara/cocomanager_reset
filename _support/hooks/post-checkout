@@ -1,0 +1,22 @@
+#!/bin/sh
+
+#NOMBRE Y RUTA DE BASE DE DATOS
+db="cocomanager"
+path="/Applications/MAMP/htdocs/cocomanager/_support/cocomanager.sql"
+
+#CREAR BASE DE DATOS
+/Applications/MAMP/Library/bin/mysql -uroot -proot -e "drop database \`$db\`;"
+
+#CREAR BASE DE DATOS
+/Applications/MAMP/Library/bin/mysql -uroot -proot -e "create database if not exists \`$db\`;"
+
+#VACIAR BASE DE DATOS
+#MYSQL="/Applications/MAMP/Library/bin/mysql -h localhost -u root -proot -D $db"
+#$MYSQL -BNe "show tables" | awk '{print "set foreign_key_checks=0; drop table `" $1 "`;"}' | $MYSQL
+#unset MYSQL
+
+#VOLCAR BASE DE DATOS
+/Applications/MAMP/Library/bin/mysql -u root -proot $db < $path;
+
+#BUENA PRACTICA PARA TERMINAR SCRIPTS BASH: RETORNAR 0
+exit 0

@@ -1,0 +1,2 @@
+ARCHIVOS EDITADOS
+g-system\application\config\database.php

@@ -1,0 +1,15 @@
+#!/bin/sh
+
+#Pre-commit hook to make a mysql dump right before committing and add it to the commit.
+ 
+
+DBNAME=cocomanager
+# The path relative to the repository root in which to store the sql dump.
+DBPATH=/Applications/MAMP/htdocs/cocomanager/_support
+ 
+[[ -d schema ]] || mkdir schema
+/Applications/MAMP/Library/bin/mysqldump -u root -proot $DBNAME > $DBPATH/$DBNAME.sql
+ 
+git add $DBPATH/$DBNAME.sql
+exit 0
+
