@@ -40,7 +40,7 @@ $lang['coco_privileges'] = array(
                                  "pm/save_project"=>"Guardar Proyecto",
                                  "pm/home"=>"Proyectos Activos",
                                  "pm/view_project"=>"Ver Proyecto",
-                                 "pm/discussions"=>"Discusiones",
+                                 "pm/discussions"=>"Foros",
                                  "pm/save_comment"=>"Guardar Comentario",
                                  "pm/members"=>"Miembros",
                                  "pm/time_records"=>"Registro de Tiempos",
@@ -105,14 +105,14 @@ $lang['coco_pm_action_status'] = array(
 $lang['coco_pm_type_object'] = array("project"=>"Proyecto",
                                      "task"=>"Tarea",
                                      "message"=>"Mensaje",
-                                     "discussion"=>"Discusion",
+                                     "discussion"=>"Foro",
                                      "comment"=>"Comentario",
                                      "file"=>"Archivo",
                                      "time_record"=>"Registro de tiempo",
                                      "fee"=>"Cuota",                                     
                                      );
    
-$lang['coco_pm_menu_project'] = array("home"=>"Inicio","discussions"=>"Discusiones",
+$lang['coco_pm_menu_project'] = array("home"=>"Inicio","discussions"=>"Foros",
                                           "members"=>"Miembros",
                                           "time_records"=>"Registros de tiempo", 
                                           "task_in_process"=>"Tarea en Proceso",
@@ -724,7 +724,7 @@ $lang['coco_pm_members_view_labels'] = array('title_form'=>"Miembros",
                                         "menu_project"=>$lang['coco_pm_menu_project'],
                                         );
 #-------------------------------------------------------------------------------
-$lang['coco_pm_view_comment_view_labels'] = array('title_form'=>array("discussion"=>'Discusion',
+$lang['coco_pm_view_comment_view_labels'] = array('title_form'=>array("discussion"=>'Foro',
                                                                       "comment"=>'Comentarios',),
                                         'link_new_comment'=>'Nuevo Comentario', 
                                         'said'=>'comento',                                       
@@ -756,7 +756,7 @@ $lang['coco_pm_view_comment_view_labels'] = array('title_form'=>array("discussio
                                         "save_buttons"=>$lang['coco_pm_save_buttons'],
                                         );
 #-------------------------------------------------------------------------------
-$lang['coco_pm_save_comment_view_labels'] = array('title_form'=>array("discussion"=>'Guardar Discusion',
+$lang['coco_pm_save_comment_view_labels'] = array('title_form'=>array("discussion"=>'Guardar Foro',
                                                                       "comment"=>'Guardar Comentario',),
                                         'set_a_task_also'=>'Establecer como 1ra una tarea, tambien',
                                         'members'=>'Miembros',
@@ -774,7 +774,7 @@ $lang['coco_pm_save_comment_view_labels'] = array('title_form'=>array("discussio
                                         );
 #-------------------------------------------------------------------------------
 $lang['coco_pm_discussions_view_labels'] = array('title_form'=>'Discusiones',
-                                        'link_new_discussion'=>'Nueva Discusion',
+                                        'link_new_discussion'=>'Nueva Foro',
                                         'by'=>'Por',
                                         'started_by'=>'Iniciado por',
                                         'reply'=>'Comentar',
